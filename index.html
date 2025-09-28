@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Menyatakan bahwa dokumen ini menggunakan standar HTML5 agar browser tahu cara membaca kode -->
+<html lang="en"> <!-- Elemen utama HTML, dengan atribut lang="en" menunjukkan bahasa utama dokumen adalah Inggris -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width;, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> <!-- Mengatur encoding karakter ke UTF-8 agar semua simbol dan huruf bisa ditampilkan dengan benar -->
+    <meta name="viewport" content="width=device-width;, initial-scale=1.0"> <!-- Membuat halaman tampil proporsional di berbagai perangkat, terutama layar mobile -->
+    <title>Document</title> <!-- Judul halaman yang akan muncul di tab browser -->
 </head>
 <body>
+    <!-- Heading digunakan untuk membuat judul dengan tingkat kepentingan berbeda. H1 paling besar, H5 lebih kecil dan kurang penting -->
     <h1>Hello World</h1>    
     <h2>Hello World</h2>    
     <h3>Hello World</h3>    
     <h4>Hello World</h4>    
     <h5>Hello World</h5>    
+
+    <!-- Tag <a> digunakan untuk membuat hyperlink. Atribut href berisi alamat tujuan yang akan dibuka saat link diklik -->
     <a href="https://youtu.be/eKL3TceSxvk?si=zgt2M9pfndQi9_Ih">rip celeste</a>
-    <br>
-    <br>
+    <br><br>
+
+    <!-- Tabel digunakan untuk menampilkan data dalam baris dan kolom. <th> membuat judul kolom, sedangkan <td> menampilkan isi data -->
     <table border="1">
         <tr>
             <th>No</th>
@@ -31,37 +35,48 @@
             <td>RezaEKAH</td>
         </tr>
     </table>
-    <br>
-    <br>
+    <br><br>
+
+    <!-- Tag <img> digunakan untuk menampilkan gambar. Atribut src menunjuk ke file gambar dan alt berisi teks alternatif jika gambar gagal dimuat -->
     <img src="ragebait.png" alt="ragebait">
+
+    <!-- Tag <p> digunakan untuk membuat paragraf teks. Kontennya biasanya berupa kalimat atau paragraf penjelasan -->
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, id.</p>
 
+    <!-- Tag <audio> menambahkan pemutar audio di halaman. Atribut controls menampilkan tombol play/pause, sedangkan source menentukan file audio -->
     <audio controls>
         <source src="">
     </audio>
 
+    <!-- Tag <form> digunakan untuk membuat formulir input data. Action menentukan tujuan data dikirim, "#" berarti tidak dikirim ke server -->
     <form action="#">
-        <label for="Username">Username</label>
-        <br>
-        <input type="text" placeholder="Username" id="Username">
-        <br>
-        <label for="Password">Password</label>
-        <br>
-        <input type="password" placeholder="Password">
-        <br>
-        <label for="Email">Email</label>
-        <br>
-        <input type="email" placeholder="Email">
-        <br>
-        <br>
-        <label for="pria">Pria</label>
-        <input type="radio" id="pria">
-        <br>
-        <br>
+        <!-- Label memberikan keterangan pada input, sedangkan input type="text" memungkinkan pengguna mengisi teks biasa -->
+        <label for="Username">Username</label><br>
+        <input type="text" placeholder="Username" id="Username"><br>
+
+        <!-- Input type="password" membuat teks yang diketik tersembunyi agar lebih aman untuk data sandi -->
+        <label for="Password">Password</label><br>
+        <input type="password" placeholder="Password"><br>
+
+        <!-- Input type="email" digunakan agar pengguna mengisi data dengan format email yang valid -->
+        <label for="Email">Email</label><br>
+        <input type="email" placeholder="Email"><br><br>
+
+        <!-- Input type="radio" digunakan untuk pilihan tunggal. Dengan name yang sama, hanya satu opsi yang bisa dipilih -->
+        <div>
+            <label for="pria">Pria</label>
+            <input type="radio" id="pria" name="gender">
+        </div>
+        <div>
+            <label for="wanita">Wanita</label>
+            <input type="radio" id="wanita" name="gender">
+        </div>
+        <br><br>
+
+        <!-- Tombol submit digunakan untuk mengirim data form, sedangkan tombol reset akan mengosongkan semua input yang sudah diisi -->
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
-        <br>
-        <br>
+        <br><br>
     </form>
 </body>
 </html>
